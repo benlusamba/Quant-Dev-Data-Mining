@@ -1,10 +1,10 @@
 import scrapy
 
 
-class MarketbotSpider(scrapy.Spider):
-    name = 'marketbot'
-    allowed_domains = ['https://www.bloomberg.com/quote/SPX:IND','https://www.bloomberg.com/quote/BCOMTR:IND','https://www.bloomberg.com/quote/DXY:CUR','https://www.bloomberg.com/quote/EXI:US']
-    start_urls = ['http://https://www.bloomberg.com/quote/SPX:IND/','https://www.bloomberg.com/quote/BCOMTR:IND','https://www.bloomberg.com/quote/DXY:CUR','https://www.bloomberg.com/quote/EXI:US']
+class MetalSpider(scrapy.Spider):
+    name = 'metal'
+    allowed_domains = ['https://www.bloomberg.com/quote/GC1:COM','https://www.bloomberg.com/quote/HG1:COM']
+    start_urls = ['https://www.bloomberg.com/quote/GC1:COM','https://www.bloomberg.com/quote/HG1:COM']
 
     def parse(self, response):
         pass
